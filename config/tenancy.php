@@ -20,7 +20,8 @@ return [
     'central_domains' => [
         '127.0.0.1',
         'localhost',
-        'http://multi-tenant-app.test/'
+        'http://multi-tenant-app.test/',
+        'multi-tenant-app.test'
     ],
 
     /**
@@ -137,7 +138,7 @@ return [
          * disable asset() helper tenancy and explicitly use tenant_asset() calls in places
          * where you want to use tenant-specific assets (product images, avatars, etc).
          */
-        'asset_helper_tenancy' => true,
+        'asset_helper_tenancy' => false,
     ],
 
     /**
